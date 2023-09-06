@@ -1,35 +1,31 @@
 @font-face {
   font-family: "Sansation";
-  src: url(./fonts/Sansation_Bold.ttf) format("ttf");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Sansation";
-  src: url(./fonts/Sansation_Light.ttf) format("ttf");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Sansation";
-  src: url(./fonts/Sansation_Regular.ttf) format("ttf");
+  src: url(../assets/fonts/Sansation_Regular.ttf) format("ttf"),
+    url(../assets/fonts/Sansation\ Regular.woff) format("woff"),
+    url(../assets/fonts/Sansation\ Regular.woff2) format("woff2");
   font-weight: 400;
+}
+
+@font-face {
+  font-family: "Sansation";
+  src: url(../assets/fonts/Sansation_Bold.ttf) format("ttf"),
+    url(../assets/fonts/Sansation\ Bold.woff) format("woff"),
+    url(../assets/fonts/Sansation\ Bold.woff2) format("woff2");
+  font-weight: 700;
 }
 
 @font-face {
   font-family: "Ubuntu";
-  src: url(./fonts/Ubuntu-Bold.ttf) format("ttf");
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: "Sansation";
-  src: url(./fonts/Ubuntu-Light.ttf) format("ttf");
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Sansation";
-  src: url(./fonts/Ubuntu-Medium.ttf) format("ttf");
+  src: url(../assets/fonts/Ubuntu-Medium.ttf) format("ttf"),
+    url(../assets/fonts/Ubuntu.woff) format("woff"),
+    url(../assets/fonts/Ubuntu.woff2) format("woff2");
   font-weight: 400;
+}
+
+@font-face {
+  font-family: "SourceSansPro";
+  src: url(../assets/fonts/SourceSansPro-Semibold.otf) format("otf"),
+    url(../assets/fonts/SourceSansPro-Semibold.woff) format("woff"),
+    url(../assets/fonts/SourceSansPro-Semibold.woff2) format("woff2");
+  font-weight: 600;
 }
