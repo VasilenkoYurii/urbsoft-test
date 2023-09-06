@@ -17,6 +17,10 @@ const userSchema = new Schema({
     match: nameRegexp,
     required: [true, "Name is required"],
   },
+  phone: {
+    type: String,
+    required: [true, "Phone is requires"],
+  },
 });
 
 userSchema.post("save", handleMongooseError);
@@ -24,6 +28,7 @@ userSchema.post("save", handleMongooseError);
 const newUserSchema = Joi.object({
   email: Joi.string().pattern(emailRegexp).required(),
   name: Joi.string().pattern(nameRegexp).required(),
+  phone: Joi.string().required(),
 });
 
 const User = model("user", userSchema);
