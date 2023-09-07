@@ -1,3 +1,5 @@
+import { Toaster } from "react-hot-toast";
+
 import { Header } from "./Header/Header";
 import { Subscription } from "./Subscription/Subscription";
 import { Footer } from "./Footer/Footer";
@@ -12,6 +14,7 @@ function App() {
         <ContactsSection />
       </main>
       <Footer />
+      <Toaster position="top-right" reverseOrder={false} />
     </>
   );
 }

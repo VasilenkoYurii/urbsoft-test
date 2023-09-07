@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Form, Field, ErrorMessage } from "formik";
 
 export const FormContainer = styled.div`
   width: 840px;
@@ -57,4 +57,19 @@ export const Input = styled(Field)`
   &::-ms-input-placeholder {
     color: var(--light-input-text);
   }
+`;
+
+export const Label = styled.label`
+  position: relative;
+`;
+
+export const ErrorText = styled(ErrorMessage)`
+  position: absolute;
+
+  color: #d5466c;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 `;

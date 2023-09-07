@@ -1,6 +1,9 @@
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik } from "formik";
+import { ThunkDispatch } from "@reduxjs/toolkit";
+import { useDispatch } from "react-redux/es/exports";
 
 import { MoreButton } from "components/MoreButton/MoreButton";
+import { postUser } from "redux/operations";
 
 import {
   FormContainer,
@@ -8,6 +11,8 @@ import {
   Input,
   StyledForm,
   InputsContainer,
+  Label,
+  ErrorText,
 } from "./QuestionForm.styled";
 
 const emailRegexp = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
@@ -20,11 +25,15 @@ interface FormValues {
   phone: string;
 }
 export const QuestionForm = () => {
+  const dispatch = useDispatch<ThunkDispatch<any, any, any>>();
+
   const handleSubmit = (
     values: FormValues,
     { resetForm }: { resetForm: () => void }
   ) => {
     console.log(values);
+
+    dispatch(postUser(values));
 
     resetForm();
   };
@@ -42,7 +51,7 @@ export const QuestionForm = () => {
           }
 
           if (!emailRegexp.test(values.email)) {
-            errors.email = "Invalid email address";
+            errors.email = `Invalid email address`;
           }
 
           if (!phoneRegexp.test(values.phone)) {
@@ -57,7 +66,7 @@ export const QuestionForm = () => {
             <FormTitle>Запит пропозицій</FormTitle>
 
             <InputsContainer>
-              <label>
+              <Label>
                 <Input
                   type="text"
                   name="name"
@@ -65,18 +74,18 @@ export const QuestionForm = () => {
                   title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
                   required
                 />
-                <ErrorMessage name="name" component="div" />
-              </label>
+                <ErrorText name="name" component="div" />
+              </Label>
 
-              <label>
+              <Label>
                 <Input type="email" name="email" placeholder="Почта" required />
-                <ErrorMessage name="email" component="div" />
-              </label>
+                <ErrorText name="email" component="div" />
+              </Label>
 
-              <label>
+              <Label>
                 <Input type="tel" name="phone" placeholder="Телефон" required />
-                <ErrorMessage name="phone" component="div" />
-              </label>
+                <ErrorText name="phone" component="div" />
+              </Label>
             </InputsContainer>
 
             <MoreButton text="Заказать звонок" />
