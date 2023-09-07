@@ -18,7 +18,7 @@ export const Header = () => {
     <HeaderStyled>
       <Container>
         <Logo src={logo} alt="Company logo" />
-        <SerchInput />
+        <SerchInput placeholder="Ваш запрос" icon="search" />
         <Navigation>
           <NavPrg>О компании</NavPrg>
           <NavPrg>Каталог</NavPrg>

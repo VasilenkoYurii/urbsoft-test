@@ -14,10 +14,13 @@ export const Container = styled.div`
   width: 1690px;
   display: flex;
   justify-content: center;
+  align-items: center;
 `;
 
 export const Logo = styled.img`
   margin-right: 100px;
+  width: 164px;
+  height: 42px;
 `;
 
 export const Navigation = styled.nav`
