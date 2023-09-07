@@ -8,6 +8,8 @@ export const HeaderStyled = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  z-index: 1;
 `;
 
 export const Container = styled.div`

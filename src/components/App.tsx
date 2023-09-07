@@ -1,6 +1,7 @@
 import { Toaster } from "react-hot-toast";
 
 import { Header } from "./Header/Header";
+import { Hero } from "./Hero/Hero";
 import { Subscription } from "./Subscription/Subscription";
 import { Footer } from "./Footer/Footer";
 import { ContactsSection } from "./ContactsSection/ContactsSection";
@@ -10,6 +11,7 @@ function App() {
     <>
       <Header />
       <main>
+        <Hero />
         <Subscription />
         <ContactsSection />
       </main>
