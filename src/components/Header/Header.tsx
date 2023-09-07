@@ -1,6 +1,6 @@
 import logo from "assets/images/logo.png";
 
-import { SerchInput } from "components/SerchInput/SerchInput";
+import { SearchInput } from "components/SearchInput/SearchInput";
 import { NavInfo } from "components/NavInfo/NavInfo";
 
 import { HeaderStyled, Container, Logo } from "./Header.styled";
@@ -10,7 +10,7 @@ export const Header = () => {
     <HeaderStyled>
       <Container>
         <Logo src={logo} alt="Company logo" />
-        <SerchInput placeholder="Ваш запрос" icon="search" />
+        <SearchInput placeholder="Ваш запрос" icon="search" />
         <NavInfo />
       </Container>
     </HeaderStyled>

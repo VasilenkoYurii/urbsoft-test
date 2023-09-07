@@ -11,7 +11,7 @@ export const FooterStyled = styled.header`
 `;
 
 export const Container = styled.div`
-  width: 1690px;
+  width: 1680px;
   display: flex;
   justify-content: center;
   align-items: center;

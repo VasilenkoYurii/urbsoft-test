@@ -36,12 +36,18 @@ export const Input = styled.input`
   }
 `;
 
-export const SubmitButton = styled.button`
+interface SubmitButtonProps {
+  icon: string;
+}
+
+export const SubmitButton = styled.button<SubmitButtonProps>`
   position: absolute;
-  top: 16px;
-  right: 25px;
+  top: ${(props) => (props.icon === "search" ? "16px" : "21px")};
+  right: ${(props) => (props.icon === "search" ? "25px" : "25px")};
 
   padding: 0;
   border: none;
   background-color: inherit;
+
+  cursor: pointer;
 `;
