@@ -1,19 +1,30 @@
 {
   "files": {
-    "main.css": "/urbsoft-test/static/css/main.44fad792.css",
-    "main.js": "/urbsoft-test/static/js/main.a8259d0b.js",
-    "static/media/Ubuntu-Light.ttf": "/urbsoft-test/static/media/Ubuntu-Light.358a4629d0320437d22e.ttf",
+    "main.css": "/urbsoft-test/static/css/main.333c1f16.css",
+    "main.js": "/urbsoft-test/static/js/main.79ac75d8.js",
     "static/media/Ubuntu-Medium.ttf": "/urbsoft-test/static/media/Ubuntu-Medium.c1e5c21a326905f47434.ttf",
-    "static/media/Ubuntu-Bold.ttf": "/urbsoft-test/static/media/Ubuntu-Bold.995358969571c1c37362.ttf",
-    "static/media/Sansation_Light.ttf": "/urbsoft-test/static/media/Sansation_Light.4b0e0e7199c58c7cc1d3.ttf",
+    "static/media/SourceSansPro-Semibold.otf": "/urbsoft-test/static/media/SourceSansPro-Semibold.e0743229b06b84f5ac5a.otf",
     "static/media/Sansation_Bold.ttf": "/urbsoft-test/static/media/Sansation_Bold.01acb21b3a650eee9aa6.ttf",
     "static/media/Sansation_Regular.ttf": "/urbsoft-test/static/media/Sansation_Regular.9be04a011dc2beea9985.ttf",
+    "static/media/Ubuntu.woff": "/urbsoft-test/static/media/Ubuntu.165ee46ce5fd8a5bbc59.woff",
+    "static/media/Ubuntu.woff2": "/urbsoft-test/static/media/Ubuntu.17f996f8becc538bcedd.woff2",
+    "static/media/SourceSansPro-Semibold.woff": "/urbsoft-test/static/media/SourceSansPro-Semibold.8ad5155fe324bf2f3e9e.woff",
+    "static/media/SourceSansPro-Semibold.woff2": "/urbsoft-test/static/media/SourceSansPro-Semibold.ca7c2878ae135e0e6dc0.woff2",
+    "static/media/Sansation Bold.woff": "/urbsoft-test/static/media/Sansation Bold.524a0905a3f382c7335f.woff",
+    "static/media/Sansation Regular.woff": "/urbsoft-test/static/media/Sansation Regular.c7cc446958e5139b1747.woff",
+    "static/media/Sansation Bold.woff2": "/urbsoft-test/static/media/Sansation Bold.0c02f9e182abf04ef058.woff2",
+    "static/media/Sansation Regular.woff2": "/urbsoft-test/static/media/Sansation Regular.0be8d1577c84d9030e8c.woff2",
+    "static/media/bag.svg": "/urbsoft-test/static/media/bag.2e3f399cac35da8812971b6adf05c9df.svg",
+    "static/media/users.svg": "/urbsoft-test/static/media/users.6d1602d46c48857d714e708088c0f982.svg",
     "index.html": "/urbsoft-test/index.html",
-    "main.44fad792.css.map": "/urbsoft-test/static/css/main.44fad792.css.map",
-    "main.a8259d0b.js.map": "/urbsoft-test/static/js/main.a8259d0b.js.map"
+    "static/media/phone.svg": "/urbsoft-test/static/media/phone.a536f9c6168d7de1c018bb56d331c70a.svg",
+    "static/media/mail.svg": "/urbsoft-test/static/media/mail.cdd19acf38067bae96730274c2011ca9.svg",
+    "static/media/serch.svg": "/urbsoft-test/static/media/serch.9a1477cd6cbc542ea182f1c92585a449.svg",
+    "main.333c1f16.css.map": "/urbsoft-test/static/css/main.333c1f16.css.map",
+    "main.79ac75d8.js.map": "/urbsoft-test/static/js/main.79ac75d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.44fad792.css",
-    "static/js/main.a8259d0b.js"
+    "static/css/main.333c1f16.css",
+    "static/js/main.79ac75d8.js"
   ]
 }
