@@ -5,7 +5,6 @@ export const Form = styled.form`
 `;
 
 export const Input = styled.input`
-  box-sizing: border-box;
   width: 400px;
   height: 60px;
   flex-shrink: 0;

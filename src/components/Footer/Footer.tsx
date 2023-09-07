@@ -1,18 +1,17 @@
 import logo from "assets/images/logo.png";
-
 import { SerchInput } from "components/SerchInput/SerchInput";
 import { NavInfo } from "components/NavInfo/NavInfo";
 
-import { HeaderStyled, Container, Logo } from "./Header.styled";
+import { FooterStyled, Container, Logo } from "./Footer.styled";
 
-export const Header = () => {
+export const Footer = () => {
   return (
-    <HeaderStyled>
+    <FooterStyled>
       <Container>
         <Logo src={logo} alt="Company logo" />
         <SerchInput placeholder="Ваш запрос" icon="search" />
         <NavInfo />
       </Container>
-    </HeaderStyled>
+    </FooterStyled>
   );
 };
