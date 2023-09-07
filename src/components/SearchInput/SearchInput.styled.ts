@@ -23,14 +23,8 @@ export const Input = styled.input`
   font-weight: 400;
   line-height: normal;
 
-  &::placeholder {
-    color: var(--light-input-text);
-  }
-
-  &:-ms-input-placeholder {
-    color: var(--light-input-text);
-  }
-
+  &::placeholder,
+  &:-ms-input-placeholder,
   &::-ms-input-placeholder {
     color: var(--light-input-text);
   }

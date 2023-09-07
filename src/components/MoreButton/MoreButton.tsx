@@ -9,7 +9,7 @@ interface MoreButtonProps {
 
 export const MoreButton = ({ text }: MoreButtonProps) => {
   return (
-    <Button>
+    <Button type="submit">
       <EllipseImg src={ellipse} alt="Ellipse icon" />
       <BottonPrg>{text}</BottonPrg>
       <ArrowImg src={arrowRight} alt="Arrow right" />
