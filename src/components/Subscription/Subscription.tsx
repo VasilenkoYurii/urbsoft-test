@@ -1,11 +1,11 @@
 import { SearchInput } from "components/SearchInput/SearchInput";
 import { MoreButton } from "components/MoreButton/MoreButton";
+import { SectionTitle } from "components/SectionTitle/SectionTitle";
 
 import {
   Section,
   Container,
   DescriptionContainer,
-  SectionTitle,
   SectionDescription,
   MoreContainer,
 } from "./Subscription.styled";
@@ -15,10 +15,11 @@ export const Subscription = () => {
     <Section>
       <Container>
         <DescriptionContainer>
-          <SectionTitle>
-            Хотите быть в курсе всех самых послених новик в мире бытовой
-            технике?
-          </SectionTitle>
+          <SectionTitle
+            text="Хотите быть в курсе всех самых послених новик в мире бытовой
+            технике?"
+          />
+
           <SectionDescription>
             Уверяем Вас, никакого спама - только по делу
           </SectionDescription>

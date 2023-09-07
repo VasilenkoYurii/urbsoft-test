@@ -25,18 +25,6 @@ export const DescriptionContainer = styled.div`
   margin-right: 98px;
 `;
 
-export const SectionTitle = styled.h2`
-  width: 742px;
-  height: 187px;
-
-  color: var(--main-text-color);
-  font-family: "Sansation", sans-serif;
-  font-size: 54px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-`;
-
 export const SectionDescription = styled.p`
   color: #b4aea7;
   font-family: "Ubuntu", sans-serif;

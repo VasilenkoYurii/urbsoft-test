@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-export const Section = styled.header`
+export const Section = styled.section`
   width: 100%;
   height: 724px;
   background-color: var(--secondary-bg-color);
