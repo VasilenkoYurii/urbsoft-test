@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/urbsoft-test/static/css/main.333c1f16.css",
-    "main.js": "/urbsoft-test/static/js/main.79ac75d8.js",
+    "main.css": "/urbsoft-test/static/css/main.21bd0874.css",
+    "main.js": "/urbsoft-test/static/js/main.15cc8718.js",
     "static/media/Ubuntu-Medium.ttf": "/urbsoft-test/static/media/Ubuntu-Medium.c1e5c21a326905f47434.ttf",
     "static/media/SourceSansPro-Semibold.otf": "/urbsoft-test/static/media/SourceSansPro-Semibold.e0743229b06b84f5ac5a.otf",
     "static/media/Sansation_Bold.ttf": "/urbsoft-test/static/media/Sansation_Bold.01acb21b3a650eee9aa6.ttf",
@@ -14,17 +14,19 @@
     "static/media/Sansation Regular.woff": "/urbsoft-test/static/media/Sansation Regular.c7cc446958e5139b1747.woff",
     "static/media/Sansation Bold.woff2": "/urbsoft-test/static/media/Sansation Bold.0c02f9e182abf04ef058.woff2",
     "static/media/Sansation Regular.woff2": "/urbsoft-test/static/media/Sansation Regular.0be8d1577c84d9030e8c.woff2",
+    "static/media/ellipse.svg": "/urbsoft-test/static/media/ellipse.20bba2f3dc90ebafda8d418b5908aa9a.svg",
     "static/media/bag.svg": "/urbsoft-test/static/media/bag.2e3f399cac35da8812971b6adf05c9df.svg",
     "static/media/users.svg": "/urbsoft-test/static/media/users.6d1602d46c48857d714e708088c0f982.svg",
     "index.html": "/urbsoft-test/index.html",
     "static/media/phone.svg": "/urbsoft-test/static/media/phone.a536f9c6168d7de1c018bb56d331c70a.svg",
     "static/media/mail.svg": "/urbsoft-test/static/media/mail.cdd19acf38067bae96730274c2011ca9.svg",
     "static/media/serch.svg": "/urbsoft-test/static/media/serch.9a1477cd6cbc542ea182f1c92585a449.svg",
-    "main.333c1f16.css.map": "/urbsoft-test/static/css/main.333c1f16.css.map",
-    "main.79ac75d8.js.map": "/urbsoft-test/static/js/main.79ac75d8.js.map"
+    "static/media/arrow-r.svg": "/urbsoft-test/static/media/arrow-r.2ddeedc1ea8329c08250feafc3c142b5.svg",
+    "main.21bd0874.css.map": "/urbsoft-test/static/css/main.21bd0874.css.map",
+    "main.15cc8718.js.map": "/urbsoft-test/static/js/main.15cc8718.js.map"
   },
   "entrypoints": [
-    "static/css/main.333c1f16.css",
-    "static/js/main.79ac75d8.js"
+    "static/css/main.21bd0874.css",
+    "static/js/main.15cc8718.js"
   ]
 }
