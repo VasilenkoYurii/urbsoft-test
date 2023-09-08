@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "img": "https://res.cloudinary.com/dyaazq8dl/image/upload/v1694165660/1862869816_w640_h640_blender-scarlett-sc-jb146g03skarlett_2_y3alzm.png",
+    "name": "Блендер Scarlet",
+    "price": "1.760",
+    "oldPrice": "1.920",
+    "accent": "-20%"
+  },
+  {
+    "id": 2,
+    "img": "https://res.cloudinary.com/dyaazq8dl/image/upload/v1694165660/1862869816_w640_h640_blender-scarlett-sc-jb146g03skarlett_2_1_ljggqw.png",
+    "name": "Чайник  Scarlet",
+    "price": "1.590",
+    "oldPrice": null,
+    "accent": "New"
+  },
+  {
+    "id": 3,
+    "img": "https://res.cloudinary.com/dyaazq8dl/image/upload/v1694165660/262-1106_fonarevkaua_1598512522021768100-1000x1000_2_cx7tjf.png",
+    "name": "Тостер Scarlet",
+    "price": "1.120",
+    "oldPrice": null,
+    "accent": null
+  },
+  {
+    "id": 4,
+    "img": "https://res.cloudinary.com/dyaazq8dl/image/upload/v1694165660/262-1106_fonarevkaua_1598512522021768100-1000x1000_2_1_grsgwu.png",
+    "name": "Миксер Scarlet",
+    "price": "1.860",
+    "oldPrice": null,
+    "accent": null
+  },
+  {
+    "id": 5,
+    "img": "https://res.cloudinary.com/dyaazq8dl/image/upload/v1694165660/262-1106_fonarevkaua_1598512522021768100-1000x1000_2_2_hqeeeo.png",
+    "name": "Cоковыжималка  Scarlet",
+    "price": "2.140",
+    "oldPrice": null,
+    "accent": null
+  },
+  {
+    "id": 6,
+    "img": "https://res.cloudinary.com/dyaazq8dl/image/upload/v1694165660/262-1106_fonarevkaua_1598512522021768100-1000x1000_2_3_tf71it.png",
+    "name": "Кофемолка  Scarlet",
+    "price": "1.120",
+    "oldPrice": null,
+    "accent": null
+  },
+  {
+    "id": 7,
+    "img": "https://res.cloudinary.com/dyaazq8dl/image/upload/v1694165660/262-1106_fonarevkaua_1598512522021768100-1000x1000_2_4_o5fmlc.png",
+    "name": "Кофемашина Scarlet",
+    "price": "4.890",
+    "oldPrice": "5.920",
+    "accent": "New"
+  },
+  {
+    "id": 8,
+    "img": "https://res.cloudinary.com/dyaazq8dl/image/upload/v1694165660/262-1106_fonarevkaua_1598512522021768100-1000x1000_2_5_whfm3c.png",
+    "name": "Мясорубка Scarlet",
+    "price": "2.360",
+    "oldPrice": null,
+    "accent": null
+  }
+]

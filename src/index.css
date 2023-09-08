@@ -53,3 +53,29 @@ p {
 input {
   outline: none;
 }
+
+.option-menu-filter {
+  display: none;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  left: 100px;
+  top: 20px;
+}
+.option-menu-filter:hover {
+  display: block;
+}
+
+.option-menu-sort {
+  display: none;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  left: 400px;
+  top: 20px;
+}
+.option-menu-sort:hover {
+  display: block;
+}
