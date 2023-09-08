@@ -47,5 +47,23 @@ export const LinkContainer = styled.div`
     justify-content: center;
     gap: 6px;
     color: var(--main-text-color);
+    transition: all 500ms;
+
+    &:hover {
+      color: var(--primary-text-color);
+
+      svg {
+        fill: var(--primary-text-color);
+      }
+    }
+  }
+`;
+
+export const Svg = styled.svg`
+  fill: var(--main-text-color);
+  transition: all 500ms;
+
+  &:hover {
+    color: var(--primary-text-color);
   }
 `;

@@ -170,7 +170,7 @@ export const ArrowSpan = styled.span`
 export const ArrowLeft = styled.button`
   position: absolute;
 
-  bottom: 0;
+  bottom: -28px;
   left: 0;
 
   background-color: inherit;
@@ -182,7 +182,7 @@ export const ArrowLeft = styled.button`
 export const ArrowRight = styled.button`
   position: absolute;
 
-  bottom: 0;
+  bottom: -28px;
   right: 0;
 
   background-color: inherit;
@@ -270,4 +270,9 @@ export const BlanderImgThree = styled.img`
   bottom: 0;
   right: -120px;
   z-index: 2;
+`;
+
+export const Svg = styled.svg`
+  fill: var(--light-section-text);
+  transition: all 500ms;
 `;

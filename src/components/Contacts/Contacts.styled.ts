@@ -45,11 +45,22 @@ export const ContactLink = styled.a`
   gap: 8px;
 
   color: var(--icon-color);
+
   font-family: "Ubuntu", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  transition: all 500ms;
+
+  &:hover {
+    color: var(--primary-text-color);
+
+    svg {
+      fill: var(--primary-text-color);
+    }
+  }
 `;
 
 export const SocialBox = styled.div`
@@ -64,6 +75,12 @@ export const SocialLink = styled.a`
   font-style: normal;
   font-weight: 400;
   line-height: 100.914%;
+
+  transition: all 500ms;
+
+  &:hover {
+    color: var(--primary-text-color);
+  }
 `;
 
 export const Map = styled.iframe`
@@ -73,4 +90,9 @@ export const Map = styled.iframe`
   position: absolute;
   bottom: 135px;
   right: 77px;
+`;
+
+export const Svg = styled.svg`
+  fill: var(--icon-color);
+  transition: all 500ms;
 `;

@@ -1,7 +1,6 @@
-import ellipse from "assets/images/ellipse.svg";
-import arrowRight from "assets/images/arrow-r.svg";
+import sprite from "assets/images/sprite.svg";
 
-import { Button, BottonPrg, EllipseImg, ArrowImg } from "./MoreButton.styled";
+import { Button, BottonPrg, SvgEllipse, SvgArrow } from "./MoreButton.styled";
 
 interface MoreButtonProps {
   text: string;
@@ -10,9 +9,15 @@ interface MoreButtonProps {
 export const MoreButton = ({ text }: MoreButtonProps) => {
   return (
     <Button type="submit">
-      <EllipseImg src={ellipse} alt="Ellipse icon" />
+      <SvgEllipse style={{ width: "50px", height: "50px" }}>
+        <use href={`${sprite}#icon-ellipse`} />
+      </SvgEllipse>
+
       <BottonPrg>{text}</BottonPrg>
-      <ArrowImg src={arrowRight} alt="Arrow right" />
+
+      <SvgArrow style={{ width: "36px", height: "36px" }}>
+        <use href={`${sprite}#icon-arrow-r`} />
+      </SvgArrow>
     </Button>
   );
 };

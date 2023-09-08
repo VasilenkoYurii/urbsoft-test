@@ -7,8 +7,7 @@ import blenderOne from "assets/images/blender1.png";
 import blenderTwo from "assets/images/blender2.png";
 import blenderThree from "assets/images/blender3.png";
 import border from "assets/images/border.png";
-import arrowL from "assets/images/arrowLS.svg";
-import arrowR from "assets/images/arrowRP.svg";
+import sprite from "assets/images/sprite.svg";
 import plus from "assets/images/plus.svg";
 
 import { MoreButton } from "components/MoreButton/MoreButton";
@@ -39,6 +38,7 @@ import {
   BlanderImgOne,
   BlanderImgTwo,
   BlanderImgThree,
+  Svg,
 } from "./Hero.styled";
 
 // import arrowLeft from "assets/images/arrow-l.svg";
@@ -138,10 +138,15 @@ export const Hero = () => {
             <MoreButton text="Узнать больше" />
           </ButtonBox>
         </HeroTitleContainer>
+
+        {/*  */}
+
         <SocialLinkBox>
           <SocialLink href="/">Facebook</SocialLink>
           <SocialLink href="/">Instagram</SocialLink>
         </SocialLinkBox>
+
+        {/*  */}
 
         <ArrowBox>
           <ArrowPrg>
@@ -149,26 +154,33 @@ export const Hero = () => {
           </ArrowPrg>
 
           <ArrowLeft>
-            <img src={arrowL} alt="Arrow left" />
+            <Svg style={{ width: "52px", height: "52px" }}>
+              <use href={`${sprite}#icon-arrowLS`} />
+            </Svg>
           </ArrowLeft>
           <ArrowRight>
-            <img src={arrowR} alt="Arrow right" />
+            <Svg style={{ width: "52px", height: "52px" }}>
+              <use href={`${sprite}#icon-arrowRP`} />
+            </Svg>
           </ArrowRight>
         </ArrowBox>
+
+        {/*  */}
+
         <LabeMainBox>
           <LabeBox>
             <LabePrg>Sencor SHB 4460WH</LabePrg>
             <LabeBtn>
               <img src={plus} alt="Plus icon" />
             </LabeBtn>
-            <LabeBorder src={border} alt="" />
+            <LabeBorder src={border} alt="Container border" />
           </LabeBox>
         </LabeMainBox>
 
-        <CircleImg src={circles} alt="" />
-        <BlanderImgOne src={blenderOne} alt="" />
-        <BlanderImgTwo src={blenderTwo} alt="" />
-        <BlanderImgThree src={blenderThree} alt="" />
+        <CircleImg src={circles} alt="circles icons" />
+        <BlanderImgOne src={blenderOne} alt="Product icon" />
+        <BlanderImgTwo src={blenderTwo} alt="Product icon" />
+        <BlanderImgThree src={blenderThree} alt="Product icon" />
       </Container>
     </HeroSection>
   );

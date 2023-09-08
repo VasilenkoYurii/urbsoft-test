@@ -1,7 +1,11 @@
 import styled from "@emotion/styled";
 
 export const Form = styled.form`
-  position: relative;
+  display: flex;
+
+  & label {
+    position: relative;
+  }
 `;
 
 export const Input = styled.input`
@@ -30,23 +34,14 @@ export const Input = styled.input`
   }
 `;
 
-export const SubmitButton = styled.button`
+export const Svg = styled.svg`
   position: absolute;
   top: 16px;
   right: 25px;
 
-  padding: 0;
-  border: none;
-  background-color: inherit;
-
-  cursor: pointer;
+  fill: var(--primary-text-color);
 `;
 
-export const Svg = styled.svg`
-  fill: var(--primary-text-color);
-  transition: all 500ms;
-
-  &:hover {
-    fill: var(--icon-color);
-  }
+export const MoreContainer = styled.div`
+  margin-left: 50px;
 `;

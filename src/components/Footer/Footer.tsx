@@ -8,7 +8,10 @@ export const Footer = () => {
   return (
     <FooterStyled>
       <Container>
-        <Logo src={logo} alt="Company logo" />
+        <a href="/">
+          <Logo src={logo} alt="Company logo" />
+        </a>
+
         <SearchInput placeholder="Ваш запрос" icon="search" />
         <NavInfo />
       </Container>

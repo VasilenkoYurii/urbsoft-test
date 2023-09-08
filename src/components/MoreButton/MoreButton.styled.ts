@@ -35,12 +35,16 @@ export const BottonPrg = styled.p`
   }
 `;
 
-export const EllipseImg = styled.img`
+export const SvgEllipse = styled.svg`
   position: absolute;
   left: 0;
+
+  fill: var(--primary-text-color);
 `;
 
-export const ArrowImg = styled.img`
+export const SvgArrow = styled.svg`
   margin-left: 8px;
   padding-top: 3px;
+
+  fill: var(--primary-text-color);
 `;

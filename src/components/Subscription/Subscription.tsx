@@ -1,5 +1,4 @@
-import { SearchInput } from "components/SearchInput/SearchInput";
-import { MoreButton } from "components/MoreButton/MoreButton";
+import { SubscriptionInput } from "components/SubscriptionInput/SubscriptionInput";
 import { SectionTitle } from "components/SectionTitle/SectionTitle";
 
 import {
@@ -7,7 +6,6 @@ import {
   Container,
   DescriptionContainer,
   SectionDescription,
-  MoreContainer,
 } from "./Subscription.styled";
 
 export const Subscription = () => {
@@ -24,11 +22,11 @@ export const Subscription = () => {
             Уверяем Вас, никакого спама - только по делу
           </SectionDescription>
         </DescriptionContainer>
-        <SearchInput placeholder="Введите Ваш email" icon="mail" />
 
-        <MoreContainer>
-          <MoreButton text="Подписаться" />
-        </MoreContainer>
+        <SubscriptionInput
+          placeholder="Введите Ваш email"
+          textForButton="Подписаться"
+        />
       </Container>
     </Section>
   );

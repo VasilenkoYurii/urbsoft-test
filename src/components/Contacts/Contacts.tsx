@@ -1,6 +1,4 @@
-import phone from "assets/images/phone.svg";
-import mailMini from "assets/images/mail-mini.svg";
-import geo from "assets/images/geo.svg";
+import sprite from "assets/images/sprite.svg";
 import { SectionTitle } from "components/SectionTitle/SectionTitle";
 
 import {
@@ -12,6 +10,7 @@ import {
   SocialLink,
   SocialBox,
   Map,
+  Svg,
 } from "./Contacts.styled";
 
 export const Contacts = () => {
@@ -24,32 +23,34 @@ export const Contacts = () => {
           <ContactsPrg>Сязаться с нами:</ContactsPrg>
 
           <ContactLink href="tel:+380974663190">
-            <img
-              src={phone}
-              alt="Phone icon"
-              style={{ width: "15px", height: "15px" }}
-            />
+            <Svg style={{ width: "15px", height: "15px" }}>
+              <use href={`${sprite}#icon-phone`} />
+            </Svg>
             +38 (097) 466 31 90
           </ContactLink>
         </ContactBox>
         <ContactBox>
           <ContactsPrg>Написать:</ContactsPrg>
           <ContactLink href="mailto:info@mir.electro.com">
-            <img src={mailMini} alt="Mail icon" />
+            <Svg style={{ width: "15px", height: "13px" }}>
+              <use href={`${sprite}#icon-mail`} />
+            </Svg>
             info@mir.electro.com
           </ContactLink>
         </ContactBox>
         <ContactBox>
           <ContactsPrg>Всегда быть в курсе:</ContactsPrg>
           <SocialBox>
-            <SocialLink href="">Facebook</SocialLink>
-            <SocialLink href="">Instagram</SocialLink>
+            <SocialLink href="https://www.facebook.com/">Facebook</SocialLink>
+            <SocialLink href="https://www.instagram.com/">Instagram</SocialLink>
           </SocialBox>
         </ContactBox>
         <ContactBox>
           <ContactsPrg>Иди заходите в гости:</ContactsPrg>
-          <ContactLink href="">
-            <img src={geo} alt="Mail icon" />
+          <ContactLink href="https://goo.gl/maps/zfCQzNLyKZHBQput9">
+            <Svg style={{ width: "30px", height: "20px" }}>
+              <use href={`${sprite}#icon-geo`} />
+            </Svg>
             г. Днепр, ул. Глинки 2, ТРЦ “Мост-Сити”
           </ContactLink>
         </ContactBox>
