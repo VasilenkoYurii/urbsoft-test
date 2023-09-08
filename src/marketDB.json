@@ -5,7 +5,8 @@
     "name": "Блендер Scarlet",
     "price": "1.760",
     "oldPrice": "1.920",
-    "accent": "-20%"
+    "accent": "-20%",
+    "slides": false
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "name": "Чайник  Scarlet",
     "price": "1.590",
     "oldPrice": null,
-    "accent": "New"
+    "accent": "New",
+    "slides": false
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "name": "Тостер Scarlet",
     "price": "1.120",
     "oldPrice": null,
-    "accent": null
+    "accent": null,
+    "slides": false
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "name": "Миксер Scarlet",
     "price": "1.860",
     "oldPrice": null,
-    "accent": null
+    "accent": null,
+    "slides": false
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "name": "Cоковыжималка  Scarlet",
     "price": "2.140",
     "oldPrice": null,
-    "accent": null
+    "accent": null,
+    "slides": false
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "name": "Кофемолка  Scarlet",
     "price": "1.120",
     "oldPrice": null,
-    "accent": null
+    "accent": null,
+    "slides": false
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "name": "Кофемашина Scarlet",
     "price": "4.890",
     "oldPrice": "5.920",
-    "accent": "New"
+    "accent": "New",
+    "slides": true
   },
   {
     "id": 8,
@@ -61,6 +68,7 @@
     "name": "Мясорубка Scarlet",
     "price": "2.360",
     "oldPrice": null,
-    "accent": null
+    "accent": null,
+    "slides": false
   }
 ]

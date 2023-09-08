@@ -12,6 +12,8 @@ export const MarketableSection = styled.section`
   padding-bottom: 50px;
   display: flex;
   justify-content: center;
+
+  position: relative;
 `;
 
 export const Container = styled.div`
@@ -69,85 +71,11 @@ export const MarketPlaceContainer = styled.div`
   position: relative;
 `;
 
-export const FiltersContainer = styled.div`
-  display: flex;
-  gap: 100px;
-  position: relative;
-`;
-
-export const FilterBox = styled.div`
-  display: flex;
-  gap: 12px;
-`;
-
-export const FilterNamePrg = styled.p`
-  color: var(--main-text-color);
-  font-family: "Ubuntu", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-`;
-
-export const FilterGroupButtonFilter = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2px;
-
-  color: var(--light-section-text);
-  font-family: "Ubuntu";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-
-  border: none;
-  background-color: inherit;
-
-  cursor: pointer;
-
-  &:hover {
-    + .option-menu-filter,
-    .option-menu-filter:hover {
-      display: block;
-    }
-  }
-`;
-
-export const FilterGroupButtonSort = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2px;
-
-  color: var(--light-section-text);
-  font-family: "Ubuntu";
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-
-  border: none;
-  background-color: inherit;
-
-  cursor: pointer;
-
-  &:hover {
-    + .option-menu-sort,
-    .option-menu-sort:hover {
-      display: block;
-    }
-  }
-`;
-
-export const Svg = styled.svg`
-  fill: var(--light-section-text);
-`;
-
 export const MarketList = styled.ul`
   width: 100%;
   height: 100%;
+
+  margin-top: 80px;
 
   display: flex;
   flex-wrap: wrap;
@@ -183,7 +111,7 @@ export const KitchenKitItem = styled.li`
   height: 432px;
 `;
 
-export const KitchenKitItemLink = styled.p`
+export const KitchenKitItemLink = styled.a`
   box-sizing: content-box;
   width: 100%;
   height: 380px;
@@ -191,8 +119,6 @@ export const KitchenKitItemLink = styled.p`
   background: url(${kithenKit}) no-repeat center;
 
   position: relative;
-
-  cursor: pointer;
 
   display: flex;
   align-items: flex-end;
@@ -219,21 +145,20 @@ export const KithenLinkPrg = styled.p`
   line-height: 100.914%;
 `;
 
-export const MarketItem = styled.li`
-  width: 380px;
-  height: 435px;
-`;
+export const ButtonSeeMore = styled.button`
+  position: absolute;
+  right: 5px;
+  bottom: -40px;
 
-export const ItemImageContainer = styled.div`
-  width: 100%;
-  height: 380px;
+  color: var(--main-text-color);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const ItemImage = styled.img`
-  /* width: 304px;
-  height: 304px; */
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
 `;

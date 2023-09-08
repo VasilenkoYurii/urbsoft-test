@@ -1,21 +1,17 @@
 // import { useState } from "react";
 
-import sprite from "assets/images/sprite.svg";
 import products from "marketDB.json";
 
 import { SectionTitle } from "components/SectionTitle/SectionTitle";
+import { Filter } from "components/Filter/Filter";
+import { ProductItem } from "components/ProductItem/ProductItem";
+
 import {
   MarketableSection,
   Container,
   TitleContainer,
   TitleDescription,
   TitleContext,
-  Svg,
-  FiltersContainer,
-  FilterBox,
-  FilterNamePrg,
-  FilterGroupButtonFilter,
-  FilterGroupButtonSort,
   MarketPlaceContainer,
   MarketList,
   KitchenAllItem,
@@ -23,9 +19,7 @@ import {
   KitchenAllItemLink,
   KitchenKitItemLink,
   KithenLinkPrg,
-  MarketItem,
-  ItemImageContainer,
-  ItemImage,
+  ButtonSeeMore,
 } from "./Marketable.styled";
 
 interface Products {
@@ -35,6 +29,7 @@ interface Products {
   price: string;
   oldPrice: string | null;
   accent: string | null;
+  slides: boolean;
 }
 
 // const filterOptions = [
@@ -59,28 +54,11 @@ export const Marketable = () => {
         </TitleContainer>
 
         <MarketPlaceContainer>
-          <FiltersContainer>
-            <FilterBox>
-              <FilterNamePrg>Фильтры:</FilterNamePrg>
-              <FilterGroupButtonFilter>
-                <p>Все</p>
-                <Svg width={16} height={12}>
-                  <use href={`${sprite}#icon-tringolB`} />
-                </Svg>
-              </FilterGroupButtonFilter>
-              <div className="option-menu-filter"></div>
-            </FilterBox>
-            <FilterBox>
-              <FilterNamePrg>Сортировать:</FilterNamePrg>
-              <FilterGroupButtonSort>
-                <p>Самые популярные</p>
-                <Svg width={16} height={12}>
-                  <use href={`${sprite}#icon-tringolB`} />
-                </Svg>
-              </FilterGroupButtonSort>
-              <div className="option-menu-sort"></div>
-            </FilterBox>
-          </FiltersContainer>
+          {/*  */}
+
+          <Filter />
+
+          {/*  */}
 
           <MarketList>
             <KitchenAllItem>
@@ -91,35 +69,23 @@ export const Marketable = () => {
             </KitchenAllItem>
 
             {products.map((product: Products) => {
-              return (
-                <MarketItem key={product.id}>
-                  <a href="">
-                    <ItemImageContainer>
-                      <ItemImage src={product.img} alt={product.name} />
-                      {product.accent && <p>{product.accent}</p>}
-                    </ItemImageContainer>
-                    <p>{product.name}</p>
-                    {!product.oldPrice && <p>{product.price}</p>}
-
-                    {product.oldPrice && (
-                      <>
-                        <p>{product.oldPrice}</p>
-                        <p>{product.price}</p>
-                      </>
-                    )}
-                  </a>
-                </MarketItem>
-              );
+              return <ProductItem key={product.id} product={product} />;
             })}
 
             <KitchenKitItem>
-              <KitchenKitItemLink>
+              <KitchenKitItemLink href="/">
                 <KithenLinkPrg>Комлекты</KithenLinkPrg>
               </KitchenKitItemLink>
               <p>Наборы техники</p>
             </KitchenKitItem>
           </MarketList>
         </MarketPlaceContainer>
+
+        {/*  */}
+
+        <ButtonSeeMore>Показать больше</ButtonSeeMore>
+
+        {/*  */}
       </Container>
     </MarketableSection>
   );
