@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { toast } from "react-hot-toast";
 
+import { succesNotify, errorNotfy } from "helpers/notification";
 import { getAllUsers, postUser } from "./operations";
 
 interface InitialState {
@@ -26,42 +26,23 @@ const usersSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(getAllUsers.pending, (state, action) => {
-        // state.users = payload;
+        state.loader = true;
       })
       .addCase(getAllUsers.fulfilled, (state, { payload }) => {
-        console.log(payload);
+        state.loader = false;
 
-        // state.users = payload;
+        state.users = payload;
       })
-      .addCase(getAllUsers.rejected, () => {
-        toast.error("Something went wrong, please try again.", {
-          style: {
-            width: "300px",
-            height: "40px",
-            borderRadius: "10px",
-            fontSize: "20px",
-          },
-        });
-      })
-      .addCase(postUser.pending, (state, { payload }) => {
-        console.log("panding");
-
-        // state.users = payload;
+      .addCase(getAllUsers.rejected, (state, _) => {
+        state.loader = false;
+        errorNotfy();
       })
       .addCase(postUser.fulfilled, (state, { payload }) => {
         console.log(payload);
-
-        // state.users = payload;
+        succesNotify();
       })
       .addCase(postUser.rejected, () => {
-        toast.error("Something went wrong, please try again.", {
-          style: {
-            width: "300px",
-            height: "40px",
-            borderRadius: "10px",
-            fontSize: "20px",
-          },
-        });
+        errorNotfy();
       });
   },
 });

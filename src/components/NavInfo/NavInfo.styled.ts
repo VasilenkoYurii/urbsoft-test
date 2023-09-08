@@ -1,12 +1,14 @@
 import styled from "@emotion/styled";
 
-export const Navigation = styled.nav`
+export const Nav = styled.nav`
+  margin-left: 82px;
+  margin-right: 50px;
+`;
+
+export const NavList = styled.ul`
   display: flex;
   align-items: center;
   gap: 40px;
-
-  margin-left: 82px;
-  margin-right: 50px;
 `;
 
 export const NavLink = styled.a`
@@ -14,8 +16,6 @@ export const NavLink = styled.a`
   font-size: 20px;
   font-weight: 400;
   line-height: normal;
-
-  cursor: pointer;
 
   transition: color 500ms;
 
@@ -35,7 +35,7 @@ export const ActivNavLink = styled.a`
   cursor: pointer;
 `;
 
-export const LinkContainer = styled.div`
+export const LinkContainer = styled.ul`
   display: flex;
   align-items: center;
   justify-content: center;

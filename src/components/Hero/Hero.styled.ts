@@ -272,7 +272,22 @@ export const BlanderImgThree = styled.img`
   z-index: 2;
 `;
 
-export const Svg = styled.svg`
-  fill: var(--light-section-text);
+interface SvgProps {
+  page: number;
+}
+
+export const SvgArL = styled.svg`
+  fill: ${(props: SvgProps) =>
+    props.page === 1
+      ? "var(--accent-text-color)"
+      : "var(--light-section-text)"};
+  transition: all 500ms;
+`;
+
+export const SvgArR = styled.svg`
+  fill: ${(props: SvgProps) =>
+    props.page === 5
+      ? "var(--accent-text-color)"
+      : "var(--light-section-text)"};
   transition: all 500ms;
 `;

@@ -1,4 +1,4 @@
-// import { useState } from "react";
+import { useState } from "react";
 // import Carousel from "react-multi-carousel";
 // import "react-multi-carousel/lib/styles.css";
 
@@ -38,7 +38,8 @@ import {
   BlanderImgOne,
   BlanderImgTwo,
   BlanderImgThree,
-  Svg,
+  SvgArL,
+  SvgArR,
 } from "./Hero.styled";
 
 // import arrowLeft from "assets/images/arrow-l.svg";
@@ -118,6 +119,10 @@ import {
 // };
 
 export const Hero = () => {
+  const [page, setPage] = useState(1);
+
+  console.log(setPage);
+
   return (
     <HeroSection>
       <Container>
@@ -154,14 +159,14 @@ export const Hero = () => {
           </ArrowPrg>
 
           <ArrowLeft>
-            <Svg style={{ width: "52px", height: "52px" }}>
+            <SvgArL style={{ width: "52px", height: "52px" }} page={page}>
               <use href={`${sprite}#icon-arrowLS`} />
-            </Svg>
+            </SvgArL>
           </ArrowLeft>
           <ArrowRight>
-            <Svg style={{ width: "52px", height: "52px" }}>
+            <SvgArR style={{ width: "52px", height: "52px" }} page={page}>
               <use href={`${sprite}#icon-arrowRP`} />
-            </Svg>
+            </SvgArR>
           </ArrowRight>
         </ArrowBox>
 

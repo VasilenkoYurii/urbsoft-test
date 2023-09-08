@@ -1,5 +1,3 @@
-import search from "assets/images/serch.svg";
-import mail from "assets/images/mail.svg";
 import sprite from "assets/images/sprite.svg";
 import { MoreButton } from "components/MoreButton/MoreButton";
 

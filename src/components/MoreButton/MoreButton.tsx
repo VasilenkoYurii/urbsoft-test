@@ -4,11 +4,19 @@ import { Button, BottonPrg, SvgEllipse, SvgArrow } from "./MoreButton.styled";
 
 interface MoreButtonProps {
   text: string;
+  fun?: Function;
 }
 
-export const MoreButton = ({ text }: MoreButtonProps) => {
+export const MoreButton = ({ text, fun }: MoreButtonProps) => {
+  const hendleClick = () => {
+    if (fun !== undefined) {
+      fun();
+    }
+    return;
+  };
+
   return (
-    <Button type="submit">
+    <Button type="submit" onClick={hendleClick}>
       <SvgEllipse style={{ width: "50px", height: "50px" }}>
         <use href={`${sprite}#icon-ellipse`} />
       </SvgEllipse>
