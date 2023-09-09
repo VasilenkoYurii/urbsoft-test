@@ -38,10 +38,21 @@ export const FilterGroupButtonFilter = styled.button`
 
   cursor: pointer;
 
+  & {
+    p {
+      height: 21px;
+    }
+  }
+
   &:hover {
     + .option-menu-filter,
     .option-menu-filter:hover {
       display: block;
+      opacity: 1;
+    }
+
+    svg {
+      transform: rotate(180deg);
     }
   }
 `;
@@ -64,14 +75,45 @@ export const FilterGroupButtonSort = styled.button`
 
   cursor: pointer;
 
+  & {
+    p {
+      height: 21px;
+    }
+  }
+
   &:hover {
     + .option-menu-sort,
     .option-menu-sort:hover {
       display: block;
+    }
+
+    svg {
+      transform: rotate(180deg);
     }
   }
 `;
 
 export const Svg = styled.svg`
   fill: var(--light-section-text);
+
+  transition: all 500ms;
+`;
+
+export const FilterList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  padding: 15px;
+`;
+
+export const FilterListItem = styled.li`
+  color: var(--light-section-text);
+  font-family: "Ubuntu";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  cursor: pointer;
 `;

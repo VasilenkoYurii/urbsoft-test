@@ -93,6 +93,25 @@ export const KitchenAllItem = styled.li`
   align-items: flex-start;
 `;
 
+export const ItemPrg = styled.p`
+  color: var(--main-text-color);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+`;
+
+export const KitchenKitItem = styled.li`
+  width: 817px;
+  height: 432px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+`;
+
 export const KitchenAllItemLink = styled.a`
   width: 817px;
   height: 380px;
@@ -104,11 +123,6 @@ export const KitchenAllItemLink = styled.a`
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-`;
-
-export const KitchenKitItem = styled.li`
-  width: 817px;
-  height: 432px;
 `;
 
 export const KitchenKitItemLink = styled.a`

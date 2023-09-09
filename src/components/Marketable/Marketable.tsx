@@ -21,6 +21,7 @@ import {
   KitchenKitItemLink,
   KithenLinkPrg,
   ButtonSeeMore,
+  ItemPrg,
 } from "./Marketable.styled";
 
 // const filterOptions = [
@@ -56,7 +57,7 @@ export const Marketable = () => {
               <KitchenAllItemLink href="/">
                 <KithenLinkPrg>Хиты этого года</KithenLinkPrg>
               </KitchenAllItemLink>
-              <p>Всё для кухни</p>
+              <ItemPrg>Всё для кухни</ItemPrg>
             </KitchenAllItem>
 
             {products.map((product: Products) => {
@@ -67,7 +68,7 @@ export const Marketable = () => {
               <KitchenKitItemLink href="/">
                 <KithenLinkPrg>Комлекты</KithenLinkPrg>
               </KitchenKitItemLink>
-              <p>Наборы техники</p>
+              <ItemPrg>Наборы техники</ItemPrg>
             </KitchenKitItem>
           </MarketList>
         </MarketPlaceContainer>

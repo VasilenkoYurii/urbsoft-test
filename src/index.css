@@ -57,11 +57,18 @@ input {
 .option-menu-filter {
   display: none;
   position: absolute;
-  width: 100px;
+  width: 200px;
   height: 100px;
   background-color: black;
   left: 100px;
   top: 20px;
+
+  z-index: 5;
+
+  background-color: var(--main-bg-color);
+  box-shadow: 0px 0px 15px 0px rgba(152, 136, 122, 0.5);
+
+  border-radius: 5px;
 }
 .option-menu-filter:hover {
   display: block;
@@ -70,11 +77,18 @@ input {
 .option-menu-sort {
   display: none;
   position: absolute;
-  width: 100px;
+  width: 250px;
   height: 100px;
   background-color: black;
-  left: 400px;
+  left: 385px;
   top: 20px;
+
+  z-index: 5;
+
+  background-color: var(--main-bg-color);
+  box-shadow: 0px 0px 15px 0px rgba(152, 136, 122, 0.5);
+
+  border-radius: 5px;
 }
 .option-menu-sort:hover {
   display: block;
