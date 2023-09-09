@@ -86,6 +86,7 @@ export const HeroDescription = styled.p`
   line-height: normal;
 
   margin-bottom: 20px;
+  padding-left: 5px;
 `;
 
 export const HeroSecondDescription = styled.p`
@@ -95,6 +96,8 @@ export const HeroSecondDescription = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  padding-left: 5px;
 `;
 
 export const ButtonBox = styled.div`
@@ -272,12 +275,8 @@ export const BlanderImgThree = styled.img`
   z-index: 2;
 `;
 
-interface SvgProps {
-  page: number;
-}
-
 export const SvgArL = styled.svg`
-  fill: ${(props: SvgProps) =>
+  fill: ${(props: { page: number }) =>
     props.page === 1
       ? "var(--accent-text-color)"
       : "var(--light-section-text)"};
@@ -285,7 +284,7 @@ export const SvgArL = styled.svg`
 `;
 
 export const SvgArR = styled.svg`
-  fill: ${(props: SvgProps) =>
+  fill: ${(props: { page: number }) =>
     props.page === 5
       ? "var(--accent-text-color)"
       : "var(--light-section-text)"};

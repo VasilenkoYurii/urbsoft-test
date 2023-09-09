@@ -2,17 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 import { succesNotify, errorNotfy } from "helpers/notification";
 import { getAllUsers, postUser } from "./operations";
-
-interface InitialState {
-  users: {
-    _id: string;
-    name: string;
-    email: string;
-    phone: string;
-    __v: number;
-  }[];
-  loader: boolean;
-}
+import { InitialState } from "helpers/interfaces";
 
 const initialState: InitialState = {
   users: [],

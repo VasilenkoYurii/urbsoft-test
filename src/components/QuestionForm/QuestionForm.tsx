@@ -4,6 +4,8 @@ import { useDispatch } from "react-redux/es/exports";
 
 import { MoreButton } from "components/MoreButton/MoreButton";
 import { postUser } from "redux/operations";
+import { FormValues } from "helpers/interfaces";
+import { emailRegexp, nameRegexp, phoneRegexp } from "helpers/paterns";
 
 import {
   FormContainer,
@@ -15,15 +17,6 @@ import {
   ErrorText,
 } from "./QuestionForm.styled";
 
-const emailRegexp = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
-const nameRegexp = /^.{3,}$/;
-const phoneRegexp = /^[\d+() -]*\d{5,}$/;
-
-interface FormValues {
-  name: string;
-  email: string;
-  phone: string;
-}
 export const QuestionForm = () => {
   const dispatch = useDispatch<ThunkDispatch<any, any, any>>();
 

@@ -2,12 +2,7 @@ import sprite from "assets/images/sprite.svg";
 
 import { Form, Input, SubmitButton, Svg } from "./SearchInput.styled";
 
-interface SerchInputProps {
-  placeholder: string;
-  icon: string;
-}
-
-export const SearchInput = ({ placeholder }: SerchInputProps) => {
+export const SearchInput = ({ placeholder }: { placeholder: string }) => {
   return (
     <Form>
       <label>

@@ -1,12 +1,4 @@
-interface UsersState {
-  users: {
-    _id: string;
-    name: string;
-    email: string;
-    phone: string;
-    __v: number;
-  }[];
-}
+import { UsersState } from "helpers/interfaces";
 
 export const selectUsers = (state: { users: UsersState }) => state.users.users;
 

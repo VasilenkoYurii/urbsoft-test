@@ -1,11 +1,8 @@
 import sprite from "assets/images/sprite.svg";
+import { MoreButtonProps } from "helpers/interfaces";
 
 import { Button, BottonPrg, SvgEllipse, SvgArrow } from "./MoreButton.styled";
 
-interface MoreButtonProps {
-  text: string;
-  fun?: Function;
-}
 
 export const MoreButton = ({ text, fun }: MoreButtonProps) => {
   const hendleClick = () => {

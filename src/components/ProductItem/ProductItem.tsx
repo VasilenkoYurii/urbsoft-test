@@ -1,4 +1,5 @@
 import sprite from "assets/images/sprite.svg";
+import { Products } from "helpers/interfaces";
 
 import {
   MarketItem,
@@ -18,19 +19,7 @@ import {
   SvgTringolButtonR,
 } from "./ProductItem.styled";
 
-interface ProductItemProps {
-  product: {
-    id: number;
-    img: string;
-    name: string;
-    price: string;
-    oldPrice: string | null;
-    accent: string | null;
-    slides: boolean;
-  };
-}
-
-export const ProductItem = ({ product }: ProductItemProps) => {
+export const ProductItem = ({ product }: { product: Products }) => {
   return (
     <MarketItem>
       {product.slides === true ? (

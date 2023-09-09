@@ -12,7 +12,7 @@ export const Footer = () => {
           <Logo src={logo} alt="Company logo" />
         </a>
 
-        <SearchInput placeholder="Ваш запрос" icon="search" />
+        <SearchInput placeholder="Ваш запрос" />
         <NavInfo />
       </Container>
     </FooterStyled>

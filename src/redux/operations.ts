@@ -1,6 +1,8 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
+import { PostUserProps } from "helpers/interfaces";
+
 axios.defaults.baseURL = "http://localhost:3001/api";
 
 export const getAllUsers = createAsyncThunk(
@@ -15,12 +17,6 @@ export const getAllUsers = createAsyncThunk(
     }
   }
 );
-
-interface PostUserProps {
-  name: string;
-  email: string;
-  phone: string;
-}
 
 export const postUser = createAsyncThunk(
   "users/postUser",

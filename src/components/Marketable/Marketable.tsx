@@ -1,6 +1,7 @@
 // import { useState } from "react";
 
 import products from "marketDB.json";
+import { Products } from "helpers/interfaces";
 
 import { SectionTitle } from "components/SectionTitle/SectionTitle";
 import { Filter } from "components/Filter/Filter";
@@ -21,16 +22,6 @@ import {
   KithenLinkPrg,
   ButtonSeeMore,
 } from "./Marketable.styled";
-
-interface Products {
-  id: number;
-  img: string;
-  name: string;
-  price: string;
-  oldPrice: string | null;
-  accent: string | null;
-  slides: boolean;
-}
 
 // const filterOptions = [
 //   { name: "Все", id: 1 },

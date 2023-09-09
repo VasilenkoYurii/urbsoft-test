@@ -1,10 +1,6 @@
 import { StyledSectionTitle } from "./SectionTitle.styled";
 
-interface SectionTitleProps {
-  text: string;
-}
-
-export const SectionTitle = ({ text }: SectionTitleProps) => {
+export const SectionTitle = ({ text }: { text: string }) => {
   return (
     <>
       <StyledSectionTitle>{text}</StyledSectionTitle>

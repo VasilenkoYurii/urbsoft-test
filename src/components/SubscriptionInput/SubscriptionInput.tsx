@@ -1,12 +1,8 @@
 import sprite from "assets/images/sprite.svg";
+import { SerchInputProps } from "helpers/interfaces";
 import { MoreButton } from "components/MoreButton/MoreButton";
 
 import { Form, Input, Svg, MoreContainer } from "./SubscriptionInput.styled";
-
-interface SerchInputProps {
-  placeholder: string;
-  textForButton: string;
-}
 
 export const SubscriptionInput = ({
   placeholder,
