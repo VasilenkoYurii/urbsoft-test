@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/urbsoft-test/static/css/main.dc809bc0.css",
-    "main.js": "/urbsoft-test/static/js/main.e6893257.js",
+    "main.css": "/urbsoft-test/static/css/main.a923dba6.css",
+    "main.js": "/urbsoft-test/static/js/main.56fffb3d.js",
     "static/media/kitchenKit.png": "/urbsoft-test/static/media/kitchenKit.13aade3e430a3c7ff3e5.png",
     "static/media/Ubuntu-Medium.ttf": "/urbsoft-test/static/media/Ubuntu-Medium.c1e5c21a326905f47434.ttf",
     "static/media/kithenAll.png": "/urbsoft-test/static/media/kithenAll.7fb0a44ea829aaf405f9.png",
@@ -23,11 +23,11 @@
     "static/media/Sansation Regular.woff2": "/urbsoft-test/static/media/Sansation Regular.0be8d1577c84d9030e8c.woff2",
     "index.html": "/urbsoft-test/index.html",
     "static/media/plus.svg": "/urbsoft-test/static/media/plus.4a3db15128ee2679348142bc5eaba936.svg",
-    "main.dc809bc0.css.map": "/urbsoft-test/static/css/main.dc809bc0.css.map",
-    "main.e6893257.js.map": "/urbsoft-test/static/js/main.e6893257.js.map"
+    "main.a923dba6.css.map": "/urbsoft-test/static/css/main.a923dba6.css.map",
+    "main.56fffb3d.js.map": "/urbsoft-test/static/js/main.56fffb3d.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc809bc0.css",
-    "static/js/main.e6893257.js"
+    "static/css/main.a923dba6.css",
+    "static/js/main.56fffb3d.js"
   ]
 }
