@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux/es/exports";
 import { MoreButton } from "components/MoreButton/MoreButton";
 import { postUser } from "redux/operations";
 import { FormValues } from "helpers/interfaces";
-import { emailRegexp, nameRegexp, phoneRegexp } from "helpers/paterns";
+import { validateFormBody } from "helpers/validateFormBody";
 
 import {
   FormContainer,
@@ -24,8 +24,6 @@ export const QuestionForm = () => {
     values: FormValues,
     { resetForm }: { resetForm: () => void }
   ) => {
-    console.log(values);
-
     dispatch(postUser(values));
 
     resetForm();
@@ -36,23 +34,7 @@ export const QuestionForm = () => {
       <Formik
         initialValues={{ name: "", email: "", phone: "" }}
         onSubmit={handleSubmit}
-        validate={(values: FormValues) => {
-          const errors: Partial<FormValues> = {};
-
-          if (!nameRegexp.test(values.name)) {
-            errors.name = "Name must be at least 3 characters long";
-          }
-
-          if (!emailRegexp.test(values.email)) {
-            errors.email = `Invalid email address`;
-          }
-
-          if (!phoneRegexp.test(values.phone)) {
-            errors.phone = "Invalid phone number";
-          }
-
-          return errors;
-        }}
+        validate={(values: FormValues) => validateFormBody(values)}
       >
         {({ isSubmitting }) => (
           <StyledForm autoComplete="off">
