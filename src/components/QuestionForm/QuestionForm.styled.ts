@@ -7,7 +7,7 @@ export const FormContainer = styled.div`
 `;
 
 export const FormTitle = styled.h2`
-  font-family: "SourceSansPro";
+  font-family: "SourceSansPro", sans-serif;
   font-size: 25px;
   font-style: normal;
   font-weight: 600;

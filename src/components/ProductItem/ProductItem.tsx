@@ -31,6 +31,11 @@ import {
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
+/**
+ * В этом компоненте мы принимаем продукт и определяем,
+ * показывать нам товар со слайдером или без него,
+ * если есть слайдер то мы добавляем функцианальность слайдера для него
+ */
 export const ProductItem = ({ product }: { product: Products }) => {
   const swiperParams = {
     spaceBetween: 10,
@@ -51,8 +56,6 @@ export const ProductItem = ({ product }: { product: Products }) => {
             <Swiper {...swiperParams} style={{ width: "375px" }}>
               {product.showSlides !== undefined &&
                 product.showSlides.map((slide, index) => {
-                  console.log(slide);
-
                   return (
                     <SwiperSlide>
                       <SlwiperSlideContainer key={index}>

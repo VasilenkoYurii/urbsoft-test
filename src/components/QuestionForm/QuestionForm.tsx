@@ -38,7 +38,7 @@ export const QuestionForm = () => {
       >
         {({ isSubmitting }) => (
           <StyledForm autoComplete="off">
-            <FormTitle>Запит пропозицій</FormTitle>
+            <FormTitle>Запит пропозицiй</FormTitle>
 
             <InputsContainer>
               <Label>
