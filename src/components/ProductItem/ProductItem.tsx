@@ -46,8 +46,6 @@ export const ProductItem = ({ product }: { product: Products }) => {
     },
   };
 
-  console.log(product.showSlides);
-
   return (
     <MarketItem>
       {product.slides === true ? (
