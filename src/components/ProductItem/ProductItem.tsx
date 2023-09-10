@@ -1,3 +1,12 @@
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import SwiperCore from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/navigation";
+
+// -----------------
+
 import sprite from "assets/images/sprite.svg";
 import { Products } from "helpers/interfaces";
 
@@ -17,23 +26,50 @@ import {
   SvgIcons,
   SvgTringolButtonL,
   SvgTringolButtonR,
+  SlwiperSlideContainer,
 } from "./ProductItem.styled";
 
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
+
 export const ProductItem = ({ product }: { product: Products }) => {
+  const swiperParams = {
+    spaceBetween: 10,
+    slidesPerView: 1,
+    navigation: {
+      nextEl: ".next-button",
+      prevEl: ".prev-button",
+    },
+  };
+
+  console.log(product.showSlides);
+
   return (
     <MarketItem>
       {product.slides === true ? (
         <>
           <ItemImageContainerSlides>
-            <img src={product.img} alt={product.name} />
+            <Swiper {...swiperParams} style={{ width: "375px" }}>
+              {product.showSlides !== undefined &&
+                product.showSlides.map((slide, index) => {
+                  console.log(slide);
+
+                  return (
+                    <SwiperSlide>
+                      <SlwiperSlideContainer key={index}>
+                        <img src={slide} alt={product.name} />
+                      </SlwiperSlideContainer>
+                    </SwiperSlide>
+                  );
+                })}
+            </Swiper>
             {product.accent && <ProductAccent>{product.accent}</ProductAccent>}
 
-            <SvgTringolButtonL>
+            <SvgTringolButtonL className="prev-button">
               <SvgTringol style={{ width: "22px", height: "16px" }}>
                 <use href={`${sprite}#icon-tringolL`} />
               </SvgTringol>
             </SvgTringolButtonL>
-            <SvgTringolButtonR>
+            <SvgTringolButtonR className="next-button">
               <SvgTringol style={{ width: "22px", height: "16px" }}>
                 <use href={`${sprite}#icon-tringolR`} />
               </SvgTringol>

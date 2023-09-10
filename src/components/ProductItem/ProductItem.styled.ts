@@ -141,12 +141,13 @@ export const SvgTringol = styled.svg`
 
 // Добавил чуть-чуть больше падингов для удобного нажатия
 export const SvgTringolButtonL = styled.button`
-  background-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
   border: none;
 
   padding: 20px 20px 20px 0;
 
   position: absolute;
+  z-index: 5;
   left: 10px;
   top: 157px;
 
@@ -161,12 +162,13 @@ export const SvgTringolButtonL = styled.button`
 
 // Добавил чуть-чуть больше падингов для удобного нажатия
 export const SvgTringolButtonR = styled.button`
-  background-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
   border: none;
 
   padding: 20px 0 20px 20px;
 
   position: absolute;
+  z-index: 5;
   right: 10px;
   top: 157px;
 
@@ -197,4 +199,10 @@ export const SvgIcons = styled.svg`
   &:hover {
     fill: var(--icon-color);
   }
+`;
+
+export const SlwiperSlideContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;

@@ -79,19 +79,6 @@ export const Slider = () => {
               <p>Centered content in Slide 2</p>
             </SlideContent>
           </SwiperSlide>
-          <SwiperSlide>
-            <SlideContent>
-              <h2>Slide 3</h2>
-              <p>Centered content in Slide 3</p>
-            </SlideContent>
-          </SwiperSlide>
-          <SwiperSlide>
-            <SlideContent>
-              <h2>Slide 4</h2>
-              <p>Centered content in Slide 4</p>
-            </SlideContent>
-          </SwiperSlide>
-          {/* ... */}
         </Swiper>
 
         <SvgTringolButtonL className="custom-prev-button">

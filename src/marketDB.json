@@ -60,7 +60,12 @@
     "price": "4.890",
     "oldPrice": "5.920",
     "accent": "New",
-    "slides": true
+    "slides": true,
+    "showSlides": [
+      "https://res.cloudinary.com/dyaazq8dl/image/upload/v1694165660/262-1106_fonarevkaua_1598512522021768100-1000x1000_2_4_o5fmlc.png",
+      "https://res.cloudinary.com/dyaazq8dl/image/upload/v1694165660/262-1106_fonarevkaua_1598512522021768100-1000x1000_2_4_o5fmlc.png",
+      "https://res.cloudinary.com/dyaazq8dl/image/upload/v1694165660/262-1106_fonarevkaua_1598512522021768100-1000x1000_2_4_o5fmlc.png"
+    ]
   },
   {
     "id": 8,

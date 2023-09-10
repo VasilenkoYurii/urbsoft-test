@@ -6,6 +6,7 @@ export interface Products {
   oldPrice: string | null;
   accent: string | null;
   slides: boolean;
+  showSlides?: string[];
 }
 
 export interface MoreButtonProps {
