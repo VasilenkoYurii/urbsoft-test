@@ -13,6 +13,9 @@ import {
   Svg,
 } from "./Contacts.styled";
 
+/**
+ * Компонент для секции контактов
+ */
 export const Contacts = () => {
   return (
     <ContactsContainer>

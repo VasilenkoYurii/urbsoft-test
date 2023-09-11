@@ -6,6 +6,7 @@ const { handleMongooseError } = require("../helpers");
 const emailRegexp = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
 const nameRegexp = /^.{3,}$/;
 
+// Схема пользователя которая записываеться в базу данных
 const userSchema = new Schema({
   email: {
     type: String,
@@ -25,6 +26,7 @@ const userSchema = new Schema({
 
 userSchema.post("save", handleMongooseError);
 
+// Схема валидации данных которые приходят с клиента
 const newUserSchema = Joi.object({
   email: Joi.string().pattern(emailRegexp).required(),
   name: Joi.string().pattern(nameRegexp).required(),

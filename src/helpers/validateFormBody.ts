@@ -1,6 +1,10 @@
 import { FormValues } from "helpers/interfaces";
 import { emailRegexp, nameRegexp, phoneRegexp } from "helpers/paterns";
 
+/**
+ * Функция валидации данных пользователя
+ */
+
 export const validateFormBody = (values: FormValues) => {
   const errors: Partial<FormValues> = {};
 

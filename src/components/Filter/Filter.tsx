@@ -11,6 +11,10 @@ import {
   FilterListItem,
 } from "./Filter.styled";
 
+/**
+ * Фильтры для секции с товарами
+ */
+
 export const Filter = () => {
   return (
     <FiltersContainer>

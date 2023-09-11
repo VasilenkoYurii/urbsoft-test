@@ -63,7 +63,7 @@ export const UsersList = styled.ul`
 export const UserItem = styled.li`
   display: flex;
   border-bottom: 1px solid rgba(104, 97, 91, 0.42);
-  padding-left: 250px;
+  padding-left: 150px;
 `;
 
 export const UserInfo = styled.p`

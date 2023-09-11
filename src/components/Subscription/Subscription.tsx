@@ -8,6 +8,10 @@ import {
   SectionDescription,
 } from "./Subscription.styled";
 
+/**
+ * Секция подписки на рассылку по почте
+ */
+
 export const Subscription = () => {
   return (
     <Section>

@@ -20,6 +20,11 @@ import {
   UserInfo,
 } from "./Partners.styled";
 
+/**
+ * Дополнительная секция по ТЗ, в которой можно получить
+ * всех пользователей которые ранее оставили контакты
+ */
+
 export const Parnters = () => {
   const dispatch = useDispatch<ThunkDispatch<any, any, any>>();
   const users = useSelector(selectUsers);
@@ -63,6 +68,7 @@ export const Parnters = () => {
                   <UserItem key={user._id}>
                     <UserInfo>{user.name}</UserInfo>
                     <UserInfo>{user.email}</UserInfo>
+                    <UserInfo>{user.phone}</UserInfo>
                   </UserItem>
                 );
               })}

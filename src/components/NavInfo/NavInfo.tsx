@@ -9,6 +9,9 @@ import {
   Svg,
 } from "./NavInfo.styled";
 
+/**
+ * Переиспольемый компонент навигации для Header Footer
+ */
 export const NavInfo = () => {
   return (
     <>

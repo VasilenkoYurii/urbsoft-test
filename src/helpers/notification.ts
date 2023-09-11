@@ -1,5 +1,9 @@
 import { toast } from "react-hot-toast";
 
+/**
+ * Функции для вызова всплывающих уведомлений
+ */
+
 export const succesNotify = () => {
   toast.success("В ближайшее время мы вам позвоним, спасибо за обращение!", {
     style: {

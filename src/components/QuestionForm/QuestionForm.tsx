@@ -17,6 +17,11 @@ import {
   ErrorText,
 } from "./QuestionForm.styled";
 
+/**
+ * Компонент формы, с использованием библиотеки Formik,
+ * имеет валидацию и отправку данных на сервер
+ */
+
 export const QuestionForm = () => {
   const dispatch = useDispatch<ThunkDispatch<any, any, any>>();
 

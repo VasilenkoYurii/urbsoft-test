@@ -2,6 +2,11 @@ import sprite from "assets/images/sprite.svg";
 
 import { Form, Input, SubmitButton, Svg } from "./SearchInput.styled";
 
+/**
+ * Переиспользуемый компонент который используется в Header, Footer
+ * принимает placeholder втде строки как обязательный параметр
+ */
+
 export const SearchInput = ({ placeholder }: { placeholder: string }) => {
   return (
     <Form>

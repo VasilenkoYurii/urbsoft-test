@@ -4,6 +4,11 @@ import { MoreButton } from "components/MoreButton/MoreButton";
 
 import { Form, Input, Svg, MoreContainer } from "./SubscriptionInput.styled";
 
+/**
+ * Переиспользуемый компонент который используется в секции подписки на новости
+ * принимает placeholder и textForButton в виде строк как обязательные параметры
+ */
+
 export const SubscriptionInput = ({
   placeholder,
   textForButton,

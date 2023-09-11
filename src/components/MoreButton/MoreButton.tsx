@@ -3,6 +3,11 @@ import { MoreButtonProps } from "helpers/interfaces";
 
 import { Button, BottonPrg, SvgEllipse, SvgArrow } from "./MoreButton.styled";
 
+/**
+ * Перееиспользуемый компонент который рендерит кнопку, принимает
+ * text в виде строки как обязательный параметр,
+ * и fun в видел функции если такая есть
+ */
 
 export const MoreButton = ({ text, fun }: MoreButtonProps) => {
   const hendleClick = () => {

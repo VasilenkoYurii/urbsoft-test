@@ -57,8 +57,8 @@ export const HeroSlide = () => {
       {/*  */}
 
       <SocialLinkBox>
-        <SocialLink href="/">Facebook</SocialLink>
-        <SocialLink href="/">Instagram</SocialLink>
+        <SocialLink href="https://www.facebook.com/">Facebook</SocialLink>
+        <SocialLink href="https://www.instagram.com/">Instagram</SocialLink>
       </SocialLinkBox>
 
       <LabeMainBox>

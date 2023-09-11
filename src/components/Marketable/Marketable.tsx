@@ -1,4 +1,4 @@
-// import { useState } from "react";
+import { useState } from "react";
 
 import products from "marketDB.json";
 import { Products } from "helpers/interfaces";
@@ -24,15 +24,12 @@ import {
   ItemPrg,
 } from "./Marketable.styled";
 
-// const filterOptions = [
-//   { name: "Все", id: 1 },
-//   { name: "Меньше 2000грн.", id: 2 },
-//   { name: "Больше 2000грн.", id: 3 },
-// ];
+/**
+ * Секция товаров, добавлена функция получения дополнительных товаров по нажатию на кнопку
+ */
 
 export const Marketable = () => {
-  //   const [filter, setFilter] = useState(false);
-  //   const [sort, setSort] = useState(false);
+  const [displayCount, setDisplayCount] = useState(8);
 
   return (
     <MarketableSection>
@@ -60,7 +57,7 @@ export const Marketable = () => {
               <ItemPrg>Всё для кухни</ItemPrg>
             </KitchenAllItem>
 
-            {products.map((product: Products) => {
+            {products.slice(0, displayCount).map((product: Products) => {
               return <ProductItem key={product.id} product={product} />;
             })}
 
@@ -75,7 +72,11 @@ export const Marketable = () => {
 
         {/*  */}
 
-        <ButtonSeeMore>Показать больше</ButtonSeeMore>
+        {displayCount < products.length && (
+          <ButtonSeeMore onClick={() => setDisplayCount(displayCount + 8)}>
+            Показать больше
+          </ButtonSeeMore>
+        )}
 
         {/*  */}
       </Container>
